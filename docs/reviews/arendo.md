@@ -8,3 +8,7 @@ The location is even better. A walking distance from La Salle, cafes and restaur
 # Reviewer: Lanz
 
 A nice quiet place if you want to study or get something else done. The staff are very accomodating and helpful although I had some trouble with contacting them through their website and facebook but if going there isn't hassle you can do the reservations and inquiries over the counter. The internet is pretty fast and they offer free coffee and the place is clean and cool and the location is not bad. Would recommend.
+
+# Reviewer: Joel
+
+During my initial visit to Arendo, I was genuinely impressed by the amenities it provides. The establishment offers spacious workspaces, complimentary coffee, and a welcoming atmosphere for teams or groups. Notably, you have the flexibility to bring and enjoy food while working, making it conducive for productive meetings and collaborations with your group. Additionally, its convenient location near the University of St. La Salle, just across from Imart, ensures easy accessibility.
