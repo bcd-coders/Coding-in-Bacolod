@@ -7,3 +7,8 @@ if you are looking for a quiet and clean place to work, this is a good place. Yo
 # Reviewer: Lanz
 
 The place is very quiet and there's seldom any people there at all. I had a hard time looking for the place when I went there for the first time due to the lack of signs. The place is cheap and they also offer free drinks. The internet is pretty good but the place is pretty small but for the price, I would say it's good enough.
+
+
+# Reviewer: Joel
+
+I have been here once, and what stood out to me was the private atmosphere it offers. For individuals seeking a private and focused environment for work or study and cheap price rate, this establishment is an ideal choice. However, it's worth mentioning that locating the venue can be somewhat challenging, as there are no visible signs or indications of its presence on the exterior of the building, despite its proximity to Bacolod Tay Tung.
