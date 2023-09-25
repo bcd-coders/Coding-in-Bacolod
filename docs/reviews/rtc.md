@@ -12,3 +12,7 @@ The place is very quiet and there's seldom any people there at all. I had a hard
 # Reviewer: Joel
 
 I have been here once, and what stood out to me was the private atmosphere it offers. For individuals seeking a private and focused environment for work or study and cheap price rate, this establishment is an ideal choice. However, it's worth mentioning that locating the venue can be somewhat challenging, as there are no visible signs or indications of its presence on the exterior of the building, despite its proximity to Bacolod Tay Tung.
+
+# Reviewer: Ariel
+
+RTC Co-working Space in Bacolod is a pretty cool spot to get some work done or just hang out. It's in a good location, so you won't have trouble finding it. Once you step inside, you'll find a chill atmosphere – perfect for focusing on your tasks. The internet there is usually solid, which is a big plus for folks who rely on a stable connection for work. And they've got some comfy seats so you can settle in and get stuff done without any hassles. They're usually good about keeping the place clean and well-maintained, which is always a relief. Plus, if you need a caffeine fix, you're in luck because they serve up free coffee, which is a nice touch.
