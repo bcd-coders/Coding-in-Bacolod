@@ -17,3 +17,9 @@ During my initial visit to Arendo, I was genuinely impressed by the amenities it
 
 I recently had the opportunity to visit Arendo Co-working Space, and I must say that the overall experience was quite positive. Based on my visit, Arendo Co-working Space in Bacolod City appears to be a highly regarded option for individuals seeking a conducive workspace in the area. It's cleanliness, courteous staff, excellent amenities, and professional atmosphere. Whether you're a home-based virtual assistant, freelancer, or professional in need of a comfortable workspace, it seems like Arendo Co-working Space has a lot to offer.
 
+# Reviewer: Ziegfred
+
+this co-working space offers a vibrant and collaborative environment for professionals seeking a creative and inspiring workspace. With a wide range of amenities, flexible workspace options, and a strong emphasis on community building, it caters to the needs of freelancers, entrepreneurs, and small businesses alike. While the pricing may be a consideration for some, the added value in terms of networking opportunities and amenities makes it a compelling choice for those looking to work in a dynamic and supportive co-working environment.
+
+ 
+

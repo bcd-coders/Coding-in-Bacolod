@@ -16,3 +16,7 @@ I have been here once, and what stood out to me was the private atmosphere it of
 # Reviewer: Ariel
 
 RTC Co-working Space in Bacolod is a pretty cool spot to get some work done or just hang out. It's in a good location, so you won't have trouble finding it. Once you step inside, you'll find a chill atmosphere – perfect for focusing on your tasks. The internet there is usually solid, which is a big plus for folks who rely on a stable connection for work. And they've got some comfy seats so you can settle in and get stuff done without any hassles. They're usually good about keeping the place clean and well-maintained, which is always a relief. Plus, if you need a caffeine fix, you're in luck because they serve up free coffee, which is a nice touch.
+
+# Reviewer: Ziegfred
+
+The first time i went to RTC is that it is very hard to locate at first. The place is inside a building where it is very closed off from the outside. Acquiring a space is cheap and they also offer free drinks inside. Although it is small, You can have a meeting consisting 5-10 people inside the largest space they have. Wi-Fi inside the place is above average since it is not well-known and a few people goes and works there from time to time. Finding food outside the building is not a problem at all since they have karinderyas and small corner shops where you can buy various foods and drinks. 
