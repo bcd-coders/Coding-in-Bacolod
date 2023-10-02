@@ -1,0 +1,24 @@
+
+.navbar
+{
+  background-color: rgb(237, 233, 233);
+  height: 60px;
+  
+  width:auto;
+  align-items: center;
+  border-bottom: 1px solid #555;
+  display: flex;
+  justify-content: space-between;
+  
+}
+
+.logo{
+  margin:80px;
+}
+
+.aboutus{
+  margin-right: 200px;
+}
+
+
+
