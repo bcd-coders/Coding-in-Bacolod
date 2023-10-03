@@ -1,10 +1,12 @@
 import Navbar from './components/navbar'
 import Reviews from './components/reviews'
+import AboutUs from './components/aboutus'
 
 function App() {
   return (
    <div>
     <Navbar/>
+    <AboutUs/>
     <Reviews 
         title="Arendo" 
         address="Gf - 9 Roli's Arcade, La Salle Avenue" 
