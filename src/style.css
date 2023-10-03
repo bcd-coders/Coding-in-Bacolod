@@ -9,7 +9,6 @@
 {
   background-color: rgb(237, 233, 233);
   height: 60px;
-  
   width:100%;
   align-items: center;
   border-bottom: 1px solid #555;
@@ -128,4 +127,60 @@
   cursor: pointer;
   position: absolute;
   bottom: 0;
+}
+
+.aboutUsImage {
+  height: 1000px;
+  background-image: url('assets/aboutUs.jpg');
+  background-size: cover; /* This ensures the image covers the whole background */
+  background-repeat: no-repeat; /* This prevents the image from repeating */
+  background-position: center center; /* This centers the image both horizontally and vertically */
+  position: relative;
+}
+
+.aboutUsTitle {
+  position: absolute;
+  top: 200px;
+  left: 200px;
+  font-size: 89px;
+  color: rgb(31, 115, 188);
+}
+
+.aboutUsBody {
+ width: 650px;
+ font-size: 50px;
+ color: rgb(255, 255, 255);
+}
+
+.aboutUsParagraph{
+  font-size: 30px;
+  
+}
+
+.aboutUsImage {
+  height: 1000px;
+  background-image: url('assets/aboutUs.jpg');
+  background-size: cover; /* This ensures the image covers the whole background */
+  background-repeat: no-repeat; /* This prevents the image from repeating */
+  background-position: center center; /* This centers the image both horizontally and vertically */
+  position: relative;
+}
+
+.aboutUsTitle {
+  position: absolute;
+  top: 200px;
+  left: 200px;
+  font-size: 89px;
+  color: rgb(31, 115, 188);
+}
+
+.aboutUsBody {
+ width: 650px;
+ font-size: 50px;
+ color: rgb(255, 255, 255);
+}
+
+.aboutUsParagraph{
+  font-size: 30px;
+  
 }
