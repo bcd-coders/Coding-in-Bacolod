@@ -1,15 +1,17 @@
+* {
+  margin: 0;
+}
 
 .navbar
 {
   background-color: rgb(237, 233, 233);
   height: 60px;
   
-  width:auto;
+  width:100%;
   align-items: center;
   border-bottom: 1px solid #555;
   display: flex;
   justify-content: space-between;
-  
 }
 
 .logo{
