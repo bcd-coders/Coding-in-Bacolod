@@ -38,6 +38,7 @@ function App() {
           address={review.address}
           image={review.image}
           reviewSummary=''
+          rating={review.rating}
           reviewData={review.reviewData}
           setSelectedPage={setSelectedPage}
         />
