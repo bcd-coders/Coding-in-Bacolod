@@ -15,6 +15,7 @@ interface Props {
 
 const reviews = ({title, address, image, reviewSummary, reviewData}: Props) => {
   const [reviewPopup, setReviewPopup] = useState<boolean>(false);
+
   return (
     <div className="review-container">
         <div className="review-image">
