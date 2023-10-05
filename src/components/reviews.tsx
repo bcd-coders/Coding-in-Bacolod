@@ -3,6 +3,7 @@ import Popup from './popup'
 import { FaStar, FaStarHalf, FaWifi } from 'react-icons/fa';
 import { FaPesoSign } from 'react-icons/fa6';
 import ReviewData from '@/reviewData';
+import { useState } from 'react'
 
 interface Props {
     title: string
@@ -10,12 +11,10 @@ interface Props {
     image: string
     reviewSummary: string
     reviewData: ReviewData[]
-    reviewPopup : boolean
-    setReviewPopup : React.Dispatch<React.SetStateAction<boolean>>
 }
 
-const reviews = ({title, address, image, reviewSummary, reviewData, reviewPopup, setReviewPopup}: Props) => {
-
+const reviews = ({title, address, image, reviewSummary, reviewData}: Props) => {
+  const [reviewPopup, setReviewPopup] = useState<boolean>(false);
   return (
     <div className="review-container">
         <div className="review-image">

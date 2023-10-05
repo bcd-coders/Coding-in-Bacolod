@@ -1,7 +1,6 @@
 import Navbar from './components/navbar'
 import Reviews from './components/reviews'
 import AboutUs from './components/aboutus'
-import { useState } from 'react'
 
 function App() {
   const arendoReviews = [
@@ -49,7 +48,6 @@ function App() {
     },
   ]
 
-  const [reviewPopup, setReviewPopup] = useState<boolean>(false);
 
 
   return (
@@ -62,8 +60,6 @@ function App() {
         image="https://picsum.photos/350/300"
         reviewSummary=""
         reviewData={arendoReviews}
-        reviewPopup={reviewPopup}
-        setReviewPopup={setReviewPopup}
     />
     <Reviews 
         title="RTC Coworking" 
@@ -71,8 +67,6 @@ function App() {
         image="https://picsum.photos/350/301"
         reviewSummary=""
         reviewData={rtcReviews}
-        reviewPopup={reviewPopup}
-        setReviewPopup={setReviewPopup}
     />
    </div>
   )
