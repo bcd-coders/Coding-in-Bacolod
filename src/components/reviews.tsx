@@ -1,15 +1,21 @@
 import '@/style.css'
+import Popup from './popup'
 import { FaStar, FaStarHalf, FaWifi } from 'react-icons/fa';
 import { FaPesoSign } from 'react-icons/fa6';
+import ReviewData from '@/reviewData';
 
 interface Props {
     title: string
     address: string
     image: string
     reviewSummary: string
+    reviewData: ReviewData[]
+    reviewPopup : boolean
+    setReviewPopup : React.Dispatch<React.SetStateAction<boolean>>
 }
 
-const reviews = ({title, address, image, reviewSummary}: Props) => {
+const reviews = ({title, address, image, reviewSummary, reviewData, reviewPopup, setReviewPopup}: Props) => {
+
   return (
     <div className="review-container">
         <div className="review-image">
@@ -36,9 +42,14 @@ const reviews = ({title, address, image, reviewSummary}: Props) => {
             <div className="review-preview">
                 <h3>Summary:</h3>
                 <p>{reviewSummary}</p>
-                <button className="rev-btn">See More</button>
+                { reviewPopup ? "" : <button className="rev-btn" onClick={() => setReviewPopup(true)}>See More</button> }
             </div>
         </div>
+        <Popup 
+            trigger={reviewPopup}
+            setTrigger={setReviewPopup}
+            reviewData={reviewData}
+        />
     </div>
   )
 }
