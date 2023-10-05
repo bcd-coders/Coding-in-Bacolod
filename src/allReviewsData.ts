@@ -3,7 +3,7 @@ const allReviewData = [
       title: "Arendo",
       address: "Gf - 9 Roli's Arcade, La Salle Avenue",
       image: "https://picsum.photos/350/300",
-      rating: "4.5",
+      rating: 5,
       reviewData: [
         {
           Reviewer: "Rex",
@@ -30,7 +30,7 @@ const allReviewData = [
       title: "RTC Coworking",
       address: "2nd F, Perpetual Bldg corner Henaez & Jovita St.", 
       image: "https://picsum.photos/350/301",
-      rating: "4",
+      rating: 4,
       reviewData: [
         {
           Reviewer: "Rex",
