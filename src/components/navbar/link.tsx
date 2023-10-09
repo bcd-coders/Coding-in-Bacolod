@@ -12,7 +12,7 @@ const Link = ({ page, selectedPage, setSelectedPage }: Props) => {
 
   return (
     <AnchorLink
-      className={`${selectedPage === lowerCasePage ? "linkNotChosen" : "linkChosen"}
+      className={`${selectedPage === lowerCasePage ? "linkChosen" : "linkNotChosen"}
        ""
       `}
       href={`#${lowerCasePage}`}

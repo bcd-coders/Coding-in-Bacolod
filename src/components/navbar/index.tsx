@@ -17,7 +17,7 @@ const index = ({ isTopOfPage, selectedPage, setSelectedPage }: Props) => {
       <div className="logo">
         Logo
       </div>
-      <div className="aboutus">
+      <div className="options">
         <Link
           page="About Us"
           selectedPage={selectedPage}

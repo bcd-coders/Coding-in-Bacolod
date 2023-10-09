@@ -14,6 +14,7 @@
   position: fixed;
   top: 0px;
   z-index: 1;
+ 
 }
 
 .navbarBackground {
@@ -25,27 +26,30 @@
   position: fixed;
   top: 0px;
   z-index: 1;
+  background: linear-gradient(to bottom, black, #014573);
 }
 
 .logo {
   margin: 80px;
+  color: white;
 }
 
 .linkChosen {
-  color: black;
-  text-decoration-line: none;
-}
-
-.linkNotChosen {
   color: blue;
   text-decoration-line: none;
 }
 
-.aboutus {
+.linkNotChosen {
+  color: white;
+  text-decoration-line: none;
+}
+
+.options {
   display: flex;
   gap: 50px;
   justify-content: flex-end;
   margin-right: 200px;
+  color: white;
 }
 
 .aboutUsMotionDiv {
