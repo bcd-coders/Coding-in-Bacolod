@@ -37,6 +37,8 @@ function App() {
           title={review.title}
           address={review.address}
           image={review.image}
+          wifiRating={review.wifiRating}
+          Price={review.price}
           reviewSummary=''
           rating={review.rating}
           reviewData={review.reviewData}

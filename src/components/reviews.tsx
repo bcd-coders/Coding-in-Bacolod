@@ -1,6 +1,7 @@
 import '@/style.css'
 import Popup from './popup'
-import { FaStar, FaWifi } from 'react-icons/fa';
+import { FaStar } from 'react-icons/fa';
+import { PiWifiMediumBold, PiWifiLowBold, PiWifiHighBold } from 'react-icons/pi'
 import { FaPesoSign } from 'react-icons/fa6';
 import ReviewData from '@/shared/reviewData';
 import { useState } from 'react'
@@ -12,13 +13,15 @@ interface Props {
     title: string
     address: string
     image: string
+    wifiRating: string
+    Price: string
     reviewSummary: string
     rating: number
     reviewData: ReviewData[]
     setSelectedPage: (value: SelectedPage) => void;
 }
 
-const reviews = ({ setSelectedPage, title, address, image, reviewSummary, reviewData, rating}: Props) => {
+const reviews = ({ setSelectedPage, title, address, image, reviewSummary, reviewData, wifiRating, Price, rating }: Props) => {
     // eslint-disable-next-line react-hooks/rules-of-hooks
     const [reviewPopup, setReviewPopup] = useState<boolean>(false);
 
@@ -44,14 +47,55 @@ const reviews = ({ setSelectedPage, title, address, image, reviewSummary, review
                                 <div className='review-rating'>{starElements}</div>
                             </div>
                             <div className="utility-summary">
-                            <div>
-                                <span>Price Range: </span>
-                                <span><FaPesoSign size="15px" color="#304B0B" /></span>
-                            </div>
-                            <div>
-                                <span>Wifi Strength: </span>
-                                <span><FaWifi size="15px" color="green" /></span>
-                            </div>
+                                <div>
+                                    <span>Price Range: </span>
+                                    {(() => {
+                                        const price = +Price;
+                                        if (price <= 1) {
+                                            return (
+                                                <FaPesoSign size="15px" color="#304B0B" />
+
+                                            )
+                                        } else if (price == 2) {
+                                            return (
+                                                <span>
+                                                    <FaPesoSign size="15px" color="#304B0B" />
+                                                    <FaPesoSign size="15px" color="#304B0B" />
+                                                </span>
+                                            )
+                                        } else {
+                                            return (
+                                                <span>
+                                                    <FaPesoSign size="15px" color="#304B0B" />
+                                                    <FaPesoSign size="15px" color="#304B0B" />
+                                                    <FaPesoSign size="15px" color="#304B0B" />
+                                                </span>
+                                            )
+                                        }
+                                    })()}
+
+                                </div>
+                                <div>
+                                    <span>Wifi Strength: </span>
+                                    <span>
+                                        {(() => {
+                                            const Rating = +wifiRating;
+                                            if (Rating <= 2) {
+                                                return (
+                                                    <PiWifiLowBold size="15px" color="red" />
+                                                )
+                                            } else if (Rating == 3) {
+                                                return (
+                                                    <PiWifiMediumBold size="15px" color="orange" />
+                                                )
+                                            } else {
+                                                return (
+                                                    <PiWifiHighBold size="15px" color="green" />
+                                                )
+                                            }
+                                        })()}
+                                    </span>
+                                </div>
                             </div>
                             <p>{address}</p>
                             </div>
