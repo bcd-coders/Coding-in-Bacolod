@@ -4,6 +4,8 @@ const allReviewData = [
       address: "Gf - 9 Roli's Arcade, La Salle Avenue",
       image: "https://picsum.photos/350/300",
       rating: "4.5",
+      price: "3",
+      wifiRating: "5",
       reviewData: [
         {
           Reviewer: "Rex",
@@ -31,6 +33,8 @@ const allReviewData = [
       address: "2nd F, Perpetual Bldg corner Henaez & Jovita St.", 
       image: "https://picsum.photos/350/301",
       rating: "4",
+      price: "1",
+      wifiRating: "3",
       reviewData: [
         {
           Reviewer: "Rex",
