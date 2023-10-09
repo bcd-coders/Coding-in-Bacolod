@@ -25,13 +25,14 @@ function App() {
 
   return (
     <div>
+      <AboutUs
+        setSelectedPage={setSelectedPage}
+      />
       <Navbar
         isTopOfPage={isTopOfPage}
         selectedPage={selectedPage}
         setSelectedPage={setSelectedPage} />
-      <AboutUs
-        setSelectedPage={setSelectedPage}
-      />
+      
       {allReviewData.map(review => (
         <Reviews
           title={review.title}

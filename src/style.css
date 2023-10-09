@@ -5,55 +5,54 @@
   margin: 0;
 }
 
-.navbar
-{
-  background-color: rgb(237, 233, 233);
+.navbar {
   height: 60px;
-  width:100%;
+  width: 100%;
   align-items: center;
-  border-bottom: 1px solid #555;
   display: flex;
   justify-content: space-between;
   position: fixed;
   top: 0px;
   z-index: 1;
+ 
 }
 
-.navbarBackground{
-  background-color: rgb(163, 161, 161);
+.navbarBackground {
   height: 60px;
-  width:100%;
+  width: 100%;
   align-items: center;
-  border-bottom: 1px solid #555;
   display: flex;
   justify-content: space-between;
   position: fixed;
   top: 0px;
   z-index: 1;
+  background: linear-gradient(to bottom, black, #014573);
 }
 
-.logo{
-  margin:80px;
+.logo {
+  margin: 80px;
+  color: white;
 }
 
-.aboutus{
+.linkChosen {
+  color: blue;
+  text-decoration-line: none;
+}
+
+.linkNotChosen {
+  color: white;
+  text-decoration-line: none;
+}
+
+.options {
   display: flex;
   gap: 50px;
   justify-content: flex-end;
   margin-right: 200px;
+  color: white;
 }
 
-.linkChosen{
-  color: black;
-  text-decoration-line: none ;
-}
-
-.linkNotChosen{
-  color: blue;
-  text-decoration-line: none ;
-}
-
-.aboutUsMotionDiv{
+.aboutUsMotionDiv {
   margin: auto;
   width: 80px;
   height: 83px;
@@ -195,58 +194,75 @@
 .aboutUsImage {
   height: 1000px;
   background-image: url('assets/aboutUs.jpg');
-  background-size: cover; /* This ensures the image covers the whole background */
-  background-repeat: no-repeat; /* This prevents the image from repeating */
-  background-position: center center; /* This centers the image both horizontally and vertically */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
   position: relative;
+  max-width: 100%;
+}
+
+.aboutUsContainer {
+  position: absolute;
+  top: 40%;
+  left: 40%;
+  transform: translate(-50%, -50%);
 }
 
 .aboutUsTitle {
-  position: absolute;
-  top: 200px;
-  left: 200px;
-  font-size: 89px;
+  font-size: 6vw;
+  width: fit-content;
   color: rgb(31, 115, 188);
 }
 
 .aboutUsBody {
- width: 650px;
- font-size: 50px;
- color: rgb(255, 255, 255);
+  font-size: 3vw;
+  width: fit-content;
+  color: rgb(255, 255, 255);
 }
 
-.aboutUsParagraph{
-  font-size: 30px;
-  
+.aboutUsParagraph {
+  font-size: 2.5vw;
+  width: fit-content;
 }
 
-.aboutUsImage {
-  height: 1000px;
-  background-image: linear-gradient(rgba(34, 34, 34, 0.5), rgba(34, 34, 34, 0.5)),url('assets/aboutUs.jpg');
-  background-size: cover; /* This ensures the image covers the whole background */
-  background-repeat: no-repeat; /* This prevents the image from repeating */
-  background-position: center center; /* This centers the image both horizontally and vertically */
-  position: relative;
+@media (max-width:600px) {
+  .aboutUsImage {
+    height: 500px;
+    background-image: linear-gradient(rgba(34, 34, 34, 0.5), rgba(34, 34, 34, 0.5)), url('assets/aboutUs.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    position: relative;
+  }
+
+  .aboutUsContainer {
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+  }
+
+  .aboutUsTitle {
+    font-weight: bold;
+    font-size: 1.3rem;
+    width: fit-content;
+    color: rgb(31, 115, 188);
+  }
+
+  .aboutUsBody {
+   
+    font-size: 1rem;
+    width: fit-content;
+    color: rgb(255, 255, 255);
+  }
+
+  .aboutUsParagraph {
+    font-size: 1rem;
+    width: fit-content;
+  }
 }
 
-.aboutUsTitle {
-  position: absolute;
-  top: 200px;
-  left: 200px;
-  font-size: 89px;
-  font-weight: bold;
-  color: rgb(31, 115, 188);
-}
 
-.aboutUsBody {
- width: 650px;
- font-size: 50px;
- color: rgb(255, 255, 255);
-}
-
-.aboutUsParagraph{
-  font-size: 30px;
-}
 
 .popup {
   position: fixed;
