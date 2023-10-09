@@ -32,7 +32,7 @@ const allReviewData = [
       title: "RTC Coworking",
       address: "2nd F, Perpetual Bldg corner Henaez & Jovita St.", 
       image: "https://picsum.photos/350/301",
-      rating: 4,
+      rating: 3,
       price: "1",
       wifiRating: "3",
       reviewData: [

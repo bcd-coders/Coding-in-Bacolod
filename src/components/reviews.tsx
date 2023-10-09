@@ -28,8 +28,11 @@ const reviews = ({ setSelectedPage, title, address, image, reviewSummary, review
     const filledStars = Math.floor(rating);
 
     const starElements = [];
-    for (let i = 0; i < filledStars; i++) {
+    for (let i = 0; i < 5; i++) {
+        if (i<=filledStars)
         starElements.push(<FaStar color="#D6AA00" key={i} />);
+        else
+        starElements.push(<FaStar color="lightgray" key={i} />);
     }
     
     return (
