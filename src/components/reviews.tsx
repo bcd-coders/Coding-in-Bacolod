@@ -1,6 +1,6 @@
 import '@/style.css'
 import Popup from './popup'
-import { FaStar, FaStarHalf } from 'react-icons/fa';
+import { FaStar } from 'react-icons/fa';
 import { PiWifiMediumBold, PiWifiLowBold, PiWifiHighBold } from 'react-icons/pi'
 import { FaPesoSign } from 'react-icons/fa6';
 import ReviewData from '@/shared/reviewData';
@@ -16,20 +16,29 @@ interface Props {
     wifiRating: string
     Price: string
     reviewSummary: string
+    rating: number
     reviewData: ReviewData[]
     setSelectedPage: (value: SelectedPage) => void;
 }
 
-const reviews = ({ setSelectedPage, title, address, image, reviewSummary, reviewData, wifiRating, Price }: Props) => {
+const reviews = ({ setSelectedPage, title, address, image, reviewSummary, reviewData, wifiRating, Price, rating }: Props) => {
     // eslint-disable-next-line react-hooks/rules-of-hooks
     const [reviewPopup, setReviewPopup] = useState<boolean>(false);
 
+    const filledStars = Math.floor(rating);
+
+    const starElements = [];
+    for (let i = 0; i < 5; i++) {
+        if (i<=filledStars)
+        starElements.push(<FaStar color="#D6AA00" key={i} />);
+        else
+        starElements.push(<FaStar color="lightgray" key={i} />);
+    }
+    
     return (
         <section id="reviews">
             <motion.div
                 onViewportEnter={() => setSelectedPage(SelectedPage.Reviews)}>
-
-
                 <div className="review-container">
                     <div className="review-image">
                         <img src={image} alt="image-placeholder" />
@@ -38,7 +47,7 @@ const reviews = ({ setSelectedPage, title, address, image, reviewSummary, review
                         <div className="review-head">
                             <div className="review-title">
                                 <h1>{title}</h1>
-                                <div className='review-rating'><FaStar color="#D6AA00" /><FaStar color="#D6AA00" /><FaStarHalf color="#D6AA00" /></div>
+                                <div className='review-rating'>{starElements}</div>
                             </div>
                             <div className="utility-summary">
                                 <div>
@@ -92,18 +101,18 @@ const reviews = ({ setSelectedPage, title, address, image, reviewSummary, review
                                 </div>
                             </div>
                             <p>{address}</p>
+                            </div>
+                            <div className="review-preview">
+                                <h3>Summary:</h3>
+                                <p>{reviewSummary}</p>
+                                {reviewPopup ? "" : <button className="rev-btn" onClick={() => setReviewPopup(true)}>See More</button>}
+                            </div>
                         </div>
-                        <div className="review-preview">
-                            <h3>Summary:</h3>
-                            <p>{reviewSummary}</p>
-                            {reviewPopup ? "" : <button className="rev-btn" onClick={() => setReviewPopup(true)}>See More</button>}
-                        </div>
-                    </div>
-                    <Popup
-                        trigger={reviewPopup}
-                        setTrigger={setReviewPopup}
-                        reviewData={reviewData}
-                    />
+                        <Popup
+                            trigger={reviewPopup}
+                            setTrigger={setReviewPopup}
+                            reviewData={reviewData}
+                        />
                 </div>
             </motion.div>
         </section>

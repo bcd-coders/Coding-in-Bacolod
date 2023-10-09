@@ -40,6 +40,7 @@ function App() {
           wifiRating={review.wifiRating}
           Price={review.price}
           reviewSummary=''
+          rating={review.rating}
           reviewData={review.reviewData}
           setSelectedPage={setSelectedPage}
         />
