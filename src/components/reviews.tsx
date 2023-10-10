@@ -14,14 +14,14 @@ interface Props {
     address: string
     image: string
     wifiRating: string
-    Price: string
+    price: string
     reviewSummary: string
     rating: number
     reviewData: ReviewData[]
     setSelectedPage: (value: SelectedPage) => void;
 }
 
-const reviews = ({ setSelectedPage, title, address, image, reviewSummary, reviewData, wifiRating, Price, rating }: Props) => {
+const reviews = ({ setSelectedPage, title, address, image, reviewSummary, reviewData, wifiRating, price, rating }: Props) => {
     // eslint-disable-next-line react-hooks/rules-of-hooks
     const [reviewPopup, setReviewPopup] = useState<boolean>(false);
 
@@ -53,13 +53,13 @@ const reviews = ({ setSelectedPage, title, address, image, reviewSummary, review
                                 <div>
                                     <span>Price Range: </span>
                                     {(() => {
-                                        const price = +Price;
-                                        if (price <= 1) {
+                                        const Price = +price;
+                                        if (Price <= 1) {
                                             return (
                                                 <FaPesoSign size="15px" color="#304B0B" />
 
                                             )
-                                        } else if (price == 2) {
+                                        } else if (Price == 2) {
                                             return (
                                                 <span>
                                                     <FaPesoSign size="15px" color="#304B0B" />
@@ -112,6 +112,13 @@ const reviews = ({ setSelectedPage, title, address, image, reviewSummary, review
                             trigger={reviewPopup}
                             setTrigger={setReviewPopup}
                             reviewData={reviewData}
+                            image={image}
+                            rating={rating}
+                            price={price}
+                            title={title}
+                            address={address}
+                            wifiRating={wifiRating}
+                            reviewSummary={reviewSummary}
                         />
                 </div>
             </motion.div>
