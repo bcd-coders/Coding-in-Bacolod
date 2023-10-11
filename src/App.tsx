@@ -1,14 +1,12 @@
 import Navbar from './components/navbar'
-import Reviews from './components/reviews'
+import Reviews from './components/reivews/reviews'
 import AboutUs from './components/aboutus'
-import allReviewData from './allReviewsData'
+import allReviewData from './shared/allReviewsData'
 import { SelectedPage } from "@/shared/types";
 import { useEffect, useState } from "react";
 
 function App() {
-  const [selectedPage, setSelectedPage] = useState<SelectedPage>(
-    SelectedPage.AboutUs
-  );
+  const [selectedPage, setSelectedPage] = useState<SelectedPage>(SelectedPage.AboutUs);
   const [isTopOfPage, setIsTopOfPage] = useState<boolean>(true);
 
   useEffect(() => {
@@ -31,15 +29,15 @@ function App() {
       <Navbar
         isTopOfPage={isTopOfPage}
         selectedPage={selectedPage}
-        setSelectedPage={setSelectedPage} />
-      
+        setSelectedPage={setSelectedPage} 
+      />
       {allReviewData.map(review => (
         <Reviews
           title={review.title}
           address={review.address}
           image={review.image}
           wifiRating={review.wifiRating}
-          Price={review.price}
+          price={review.price}
           reviewSummary=''
           rating={review.rating}
           reviewData={review.reviewData}
