@@ -3,7 +3,7 @@ import '@/style.css'
 import '@/shared/reviewData'
 import ReviewData from '@/shared/reviewData';
 import { FaStar } from 'react-icons/fa';
-import { PiWifiMediumBold, PiWifiLowBold, PiWifiHighBold, PiImageSquare } from 'react-icons/pi'
+import { PiWifiMediumBold, PiWifiLowBold, PiWifiHighBold } from 'react-icons/pi'
 import { AiOutlineArrowLeft, AiOutlineArrowRight } from 'react-icons/ai'
 import { FaPesoSign } from 'react-icons/fa6';
 import { imgs } from '@/shared/imgs'
@@ -25,7 +25,7 @@ interface Props {
 
 
 
-const popup = ({ trigger, setTrigger, reviewData, title, address, image, wifiRating, price, rating }: Props) => {
+const popup = ({ trigger, setTrigger, reviewData, title, address, wifiRating, price, rating }: Props) => {
 
   const filledStars = Math.floor(rating);
   const starElements = [];
