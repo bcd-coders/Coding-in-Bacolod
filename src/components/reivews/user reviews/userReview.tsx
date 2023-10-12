@@ -1,3 +1,4 @@
+import { BsPersonCircle } from "react-icons/bs";
 
 interface Props {
     reviewer: string
@@ -6,9 +7,12 @@ interface Props {
 
 const userReview = ({reviewer, review}: Props) => {
   return (
-    <div>
+    <div className='user-review-container'>
+      <div className="user-review-title">
+        <div className="user-img"><BsPersonCircle /></div>
         <h1>{reviewer}</h1>
-        <p>{review}</p>
+      </div>
+      <p>{review}</p>
     </div>
   )
 }
