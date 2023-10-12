@@ -14,7 +14,7 @@
   position: fixed;
   top: 0px;
   z-index: 1;
- 
+  transition:0.3s ease;
 }
 
 .navbarBackground {
@@ -26,7 +26,9 @@
   position: fixed;
   top: 0px;
   z-index: 1;
-  background: linear-gradient(to bottom, black, #014573);
+  background-color: #0e1011;
+  transition: background-color 0.3s ease;
+  border-bottom: solid 2px rgb(73, 73, 73);
 }
 
 .logo {
@@ -35,7 +37,8 @@
 }
 
 .linkChosen {
-  color: blue;
+  color: rgb(31, 115, 188);
+  font-weight: bold;
   text-decoration-line: none;
 }
 
@@ -64,6 +67,7 @@
 .aboutUsImage {
   height: 1000px;
   background-image: url('assets/aboutUs.jpg');
+  background-image: linear-gradient(rgba(34, 34, 34, 0.5), rgba(34, 34, 34, 0.5)), url('assets/aboutUs.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -146,6 +150,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  box-shadow: 3px 3px 5px 3px gray;
 }
 
 .popup-inner {
