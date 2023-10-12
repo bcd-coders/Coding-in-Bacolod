@@ -149,6 +149,7 @@
     width: 100%;
     max-width: 1000px;
     background-color: #FFF;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
   }
   
   .popup-inner .close-btn {
@@ -173,6 +174,7 @@
   
   .popup-summary{
     top: 100px;
+    border: solid 1px black;
   }
   .popup-head{
     width: 400px;
