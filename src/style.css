@@ -14,7 +14,7 @@
   position: fixed;
   top: 0px;
   z-index: 1;
- 
+  transition:0.3s ease;
 }
 
 .navbarBackground {
@@ -26,7 +26,8 @@
   position: fixed;
   top: 0px;
   z-index: 1;
-  background: linear-gradient(to bottom, black, #014573);
+  background-color: #0e1011F4;
+  transition: background-color 0.3s ease;
 }
 
 .logo {
@@ -35,7 +36,8 @@
 }
 
 .linkChosen {
-  color: blue;
+  color: rgb(31, 115, 188);
+  font-weight: bold;
   text-decoration-line: none;
 }
 
@@ -64,9 +66,10 @@
 .aboutUsImage {
   height: 1000px;
   background-image: url('assets/aboutUs.jpg');
-  background-size: 1900px;
+  background-image: linear-gradient(rgba(34, 34, 34, 0.5), rgba(34, 34, 34, 0.5)), url('assets/aboutUs.jpg');
+  background-size: cover;
   background-repeat: no-repeat;
-  background-position: bottom left ;
+  background-position: center center;
   position: relative;
   max-width: 100%;
 }
@@ -75,24 +78,23 @@
   position: absolute;
   top: 20%;
   left: 10%;
-  width: 50vw;
-  
+  width: 600px;
 }
 
 .aboutUsTitle {
-  font-size: 25px;
+  font-size: 59px;
   width: fit-content;
   color: rgb(31, 115, 188);
 }
 
 .aboutUsBody {
-  font-size: 55px;
+  font-size: 34px;
   width: fit-content;
   color: rgb(255, 255, 255);
 }
 
 .aboutUsParagraph {
-  font-size: 30px;
+  font-size: 20px;
   width: fit-content;
 }
 
@@ -122,7 +124,7 @@
   }
 
   .aboutUsBody {
-   
+
     font-size: 1rem;
     width: fit-content;
     color: rgb(255, 255, 255);
@@ -148,6 +150,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  box-shadow: 3px 3px 5px 3px gray;
 }
 
 .popup-inner {
@@ -218,8 +221,60 @@
   text-align-last: center;
 }
 
+/* USER REVIEWS */
 .button-row {
+  margin: auto;
   display: flex;
   justify-content: space-between;
-  width: 100%;
+  align-items: center;
+  max-width: 500px;
+  padding: 5px;
+}
+
+.button-row button {
+  margin-top: 10px;
+  border: none;
+  cursor: pointer;
+  background: none;
+}
+
+.button-row button:hover {
+  color: lightgray;
+  transform: scale(1.2);
+}
+
+.btn-next-prev {
+  font-size: 30px;
+}
+
+.item-selectors {
+  font-size: 20px;
+}
+
+.user-review-container {
+  margin-top: 10px;
+  padding: 10px;
+}
+
+@media (max-width: 600px){
+  .user-review-container {
+    margin-top: 10px;
+    padding: 10px;
+    height: 30vh;
+  }
+}
+
+.user-review-container p {
+  margin-top: 10px;
+  line-height: 1.4;
+}
+
+.user-review-title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.user-img {
+  font-size: 30px;
 }
