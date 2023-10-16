@@ -15,7 +15,7 @@ const filledStars = Math.floor(rating);
 
 const starElements = [];
 for (let i = 0; i < 5; i++) {
-    if (i<=filledStars)
+    if (i<filledStars)
     starElements.push(<FaStar color="#D6AA00" key={i} />);
     else
     starElements.push(<FaStar color="lightgray" key={i} />);
