@@ -1,0 +1,54 @@
+.footer {
+  background-color: #0e1011F4;
+  padding: 20px 0; 
+  color: #fff;
+  height: auto;
+  margin-top: 20px;
+}
+
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  height: auto; 
+}
+
+.center-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto; 
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  gap: 10px;
+  font-size: 16px;
+  font-family: 'Candal', sans-serif;
+  font-size: 30px; 
+}
+
+.contact i {
+  font-size: 30px; 
+}
+
+.email-input {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.contact-text {
+  font-size: 20px; 
+  font-family: 'Candal', sans-serif;
+}
+
+
+
+
