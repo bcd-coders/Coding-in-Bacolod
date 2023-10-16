@@ -5,6 +5,7 @@ import ReviewData from '@/shared/reviewData';
 import ReivewHeader from './reivew_header';
 import UserReviewDisplay from './user reviews/userReviewDisplay';
 import ImgCarousel from './imgcarousel';
+import Jeepneys from '@/shared/jeepneys';
 
 interface Props {
   trigger: boolean;
@@ -17,9 +18,10 @@ interface Props {
   price: string
   reviewSummary: string
   rating: number
+  jeepneys: Jeepneys[]
 }
 
-const popup = ({ trigger, setTrigger, reviewData, title, address, wifiRating, price, rating }: Props) => {
+const popup = ({ jeepneys, trigger, setTrigger, reviewData, title, address, wifiRating, price, rating }: Props) => {
 
 
   return (trigger) ? (
@@ -29,6 +31,8 @@ const popup = ({ trigger, setTrigger, reviewData, title, address, wifiRating, pr
           <ImgCarousel />
           <div className="popup-summary">
             <ReivewHeader
+              jeepneys={jeepneys}
+              trigger={trigger}
               title={title}
               address={address}
               wifiRating={wifiRating}

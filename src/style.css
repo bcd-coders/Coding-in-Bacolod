@@ -66,10 +66,9 @@
 .aboutUsImage {
   height: 1000px;
   background-image: url('assets/aboutUs.jpg');
-  background-image: linear-gradient(rgba(34, 34, 34, 0.5), rgba(34, 34, 34, 0.5)), url('assets/aboutUs.jpg');
-  background-size: cover;
+  background-size: 1900px;
   background-repeat: no-repeat;
-  background-position: center center;
+  background-position: bottom left ;
   position: relative;
   max-width: 100%;
 }
@@ -78,23 +77,24 @@
   position: absolute;
   top: 20%;
   left: 10%;
-  width: 600px;
+  width: 50vw;
+
 }
 
 .aboutUsTitle {
-  font-size: 59px;
+  font-size: 30px;
   width: fit-content;
   color: rgb(31, 115, 188);
 }
 
 .aboutUsBody {
-  font-size: 34px;
+  font-size: 55px;
   width: fit-content;
   color: rgb(255, 255, 255);
 }
 
 .aboutUsParagraph {
-  font-size: 20px;
+  font-size: 30px;
   width: fit-content;
 }
 

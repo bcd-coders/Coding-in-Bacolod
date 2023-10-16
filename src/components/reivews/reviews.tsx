@@ -1,6 +1,7 @@
 import './reviews.css'
 import Popup from './popup'
 import ReviewData from '@/shared/reviewData';
+import Jeepneys from '@/shared/jeepneys';
 import { useState } from 'react'
 import { SelectedPage } from "@/shared/types";
 import { motion } from "framer-motion";
@@ -16,10 +17,11 @@ interface Props {
     reviewSummary: string
     rating: number
     reviewData: ReviewData[]
+    jeepneys:Jeepneys[]
     setSelectedPage: (value: SelectedPage) => void;
 }
 
-const reviews = ({ setSelectedPage, title, address, image, reviewSummary, reviewData, wifiRating, price, rating }: Props) => {
+const reviews = ({ setSelectedPage, jeepneys, title, address, image, reviewSummary, reviewData, wifiRating, price, rating }: Props) => {
     const [reviewPopup, setReviewPopup] = useState<boolean>(false);
 
     return (
@@ -32,6 +34,8 @@ const reviews = ({ setSelectedPage, title, address, image, reviewSummary, review
                     </div>
                     <div className="review-summary">
                         <ReivewHeader 
+                            trigger={reviewPopup}
+                            jeepneys={jeepneys}
                             title={title}
                             address={address}
                             wifiRating={wifiRating}
@@ -46,6 +50,7 @@ const reviews = ({ setSelectedPage, title, address, image, reviewSummary, review
                     </div>
                     <Popup
                         trigger={reviewPopup}
+                        jeepneys={jeepneys}
                         setTrigger={setReviewPopup}
                         reviewData={reviewData}
                         image={image}
