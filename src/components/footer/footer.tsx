@@ -5,9 +5,8 @@ const Footer: React.FC = () => {
   return (
     <footer className="footer">
       <div className="footer-content">
-        <div className="contact">Visit Us <div>at</div> bcd coders.</div>
         <div className="contact">
-          <i className="fas fa-envelope" />
+          Visit Us at <strong>bcd coders.</strong>
         </div>
         <div className="center-image">
           <img src="src\assets\logo.png" alt="Center Image" />
@@ -16,4 +15,5 @@ const Footer: React.FC = () => {
     </footer>
   );
 };
+
 export default Footer;

@@ -2,7 +2,7 @@
   background-color: #0e1011F4;
   padding: 20px 0; 
   color: #fff;
-  height: auto;
+  height: 350px;
   margin-top: 20px;
 }
 
@@ -13,14 +13,15 @@
   align-items: center;
   max-width: 1200px;
   margin: 0 auto;
-  height: auto; 
+  height: 300px; 
 }
 
 .center-image {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: auto; 
+  max-width: 100%;
+  height: 10%; 
 }
 
 .contact {
@@ -31,17 +32,6 @@
   font-size: 16px;
   font-family: 'Candal', sans-serif;
   font-size: 30px; 
-}
-
-.contact i {
-  font-size: 30px; 
-}
-
-.email-input {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 10px;
 }
 
 .contact-text {
