@@ -6,6 +6,13 @@ const allReviewData = [
       rating: 5,
       price: "3",
       wifiRating: "5",
+      jeepneys: [
+        {
+          jeep1: "Shopping - La Salle",
+          jeep2: "Shopping - San Augustin",
+          jeep3: "Libertad - Eroreco"
+        }
+      ],
       reviewData: [
         {
           Reviewer: "Rex",
@@ -35,6 +42,12 @@ const allReviewData = [
       rating: 3,
       price: "1",
       wifiRating: "3",
+      jeepneys: [
+        {
+          jeep1: "Bata - Libertad",
+          jeep2: "Mandalagan - Libertad",
+        }
+      ],
       reviewData: [
         {
           Reviewer: "Rex",
@@ -65,6 +78,13 @@ const allReviewData = [
       rating: 4,
       price: "3",
       wifiRating: "3",
+      jeepneys: [
+        {
+          jeep1: "Bata - Libertad",
+          jeep2: "Mandalagan - Libertad",
+          jeep3: "Northbound - Shopping"
+        }
+      ],
       reviewData: [
         {
           Reviewer: "Rex",
