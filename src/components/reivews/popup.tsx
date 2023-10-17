@@ -47,7 +47,7 @@ const popup = ({ trigger, setTrigger, reviewData, title, address, wifiRating, pr
                 <div className="jeep-list">
                   {jeeps.map((jeepneys, index) =>(index < jeeps.length-1) ? (
                     <div className='jeep-items'>
-                      <p>{jeepneys.jeep}</p><TbPointFilled />
+                      <p>{jeepneys.jeep}</p><TbPointFilled color="#454545" />
                     </div>
                   ): 
                     <div className='jeep-items'>

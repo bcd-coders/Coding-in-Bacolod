@@ -2,6 +2,7 @@ import Navbar from './components/navbar'
 import Reviews from './components/reivews/reviews'
 import AboutUs from './components/aboutus'
 import allReviewData from './shared/allReviewsData'
+import Footer from './components/footer/footer'
 import { SelectedPage } from "@/shared/types";
 import { useEffect, useState } from "react";
 
@@ -45,8 +46,9 @@ function App() {
           setSelectedPage={setSelectedPage}
         />
       ))}
+      <Footer/>
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
