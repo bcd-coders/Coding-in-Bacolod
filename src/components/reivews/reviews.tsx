@@ -16,10 +16,11 @@ interface Props {
     reviewSummary: string
     rating: number
     reviewData: ReviewData[]
+    jeeps: any[]
     setSelectedPage: (value: SelectedPage) => void;
 }
 
-const reviews = ({ setSelectedPage, title, address, image, reviewSummary, reviewData, wifiRating, price, rating }: Props) => {
+const reviews = ({ setSelectedPage, title, address, image, reviewSummary, reviewData, wifiRating, price, rating, jeeps }: Props) => {
     const [reviewPopup, setReviewPopup] = useState<boolean>(false);
 
     return (
@@ -28,10 +29,11 @@ const reviews = ({ setSelectedPage, title, address, image, reviewSummary, review
                 onViewportEnter={() => setSelectedPage(SelectedPage.Reviews)}>
                 <div className="review-container">
                     <div className="review-image">
-                        <img src={image} alt="image-placeholder" />
+                        <img onClick={() => setReviewPopup(true)} src={image} alt="image-placeholder" />
                     </div>
                     <div className="review-summary">
                         <ReivewHeader 
+                            trigger={reviewPopup}
                             title={title}
                             address={address}
                             wifiRating={wifiRating}
@@ -55,6 +57,7 @@ const reviews = ({ setSelectedPage, title, address, image, reviewSummary, review
                         address={address}
                         wifiRating={wifiRating}
                         reviewSummary={reviewSummary}
+                        jeeps={jeeps}
                     />
                 </div>
             </motion.div>
