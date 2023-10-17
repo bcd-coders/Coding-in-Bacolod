@@ -1,15 +1,16 @@
-import React from 'react';
 import './Footer.css';
+import {BiCopyright} from 'react-icons/bi'
 
-const Footer: React.FC = () => {
+const Footer = () => {
   return (
-    <footer className="footer">
+    <footer>
       <div className="footer-content">
-        <div className="contact">
-          Visit Us at <strong>bcd coders.</strong>
+        <div className="foot-title">
+          <p><BiCopyright />2023</p><h2>bcd coders.</h2>
         </div>
-        <div className="center-image">
-          <img src="src\assets\logo.png" alt="Center Image" />
+        <img src="src\assets\logo.png" alt="Center Image" />
+        <div className="contact">
+          <h2>Our <a href="/">Services</a>.</h2>
         </div>
       </div>
     </footer>
