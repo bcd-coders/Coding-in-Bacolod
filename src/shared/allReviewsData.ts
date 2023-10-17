@@ -6,7 +6,7 @@ const allReviewData = [
     rating: 5,
     price: "3",
     wifiRating: "5",
-    jeepneys: [
+    jeeps: [
       {
         jeep: "Shopping - La Salle"
       },
@@ -47,7 +47,7 @@ const allReviewData = [
     rating: 3,
     price: "1",
     wifiRating: "3",
-    jeepneys: [
+    jeeps: [
       {
         jeep: "Bata - Libertad"
       },
@@ -85,7 +85,7 @@ const allReviewData = [
     rating: 4,
     price: "3",
     wifiRating: "3",
-    jeepneys: [
+    jeeps: [
       {
         jeep: "Bata - Libertad"
       },

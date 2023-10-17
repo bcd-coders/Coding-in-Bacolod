@@ -65,7 +65,7 @@
 
 .aboutUsImage {
   height: 1000px;
-  background-image: url('assets/aboutUs.jpg');
+  background-image: linear-gradient(rgba(34, 34, 34, 0.5), rgba(34, 34, 34, 0.5)), url('assets/aboutUs.jpg');
   background-size: 1900px;
   background-repeat: no-repeat;
   background-position: bottom left ;

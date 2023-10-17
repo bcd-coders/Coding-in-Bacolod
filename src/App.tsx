@@ -41,6 +41,7 @@ function App() {
           reviewSummary=''
           rating={review.rating}
           reviewData={review.reviewData}
+          jeeps={review.jeeps}
           setSelectedPage={setSelectedPage}
         />
       ))}

@@ -10,7 +10,8 @@
   
   .review-head {
     width: 400px;
-    padding: 15px;
+    padding-top: 15px;
+    padding-left: 15px;
     object-fit: cover;
   }
   
@@ -20,6 +21,13 @@
   
   .review-image {
     width: 100%;
+    cursor: pointer;
+  }
+
+  .review-image:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+    border-radius: 1em 1em 1em 1em;
   }
   
   .review-image img {
@@ -44,7 +52,8 @@
   
     .review-head {
       width: 100%;
-      padding: 15px;
+      padding-top: 15px;
+      padding-left: 15px;
       object-fit: cover;
     }
   
@@ -154,10 +163,21 @@
   
   .popup-inner .close-btn {
     position: absolute;
-    top: 16px;
-    right: 16px;
+    top: 8px;
+    right: 8px;
+    font-size: 25px;
   }
-  
+
+  .close-btn {
+    border: none;
+    cursor: pointer;
+    background: none;
+  }
+
+  .close-btn:hover {
+    color: lightgray;
+  }
+
   .popup-container {
     box-shadow: 3px 3px 5px 3px gray;
     display: flex;
@@ -174,8 +194,8 @@
   
   .popup-summary{
     top: 100px;
-    border: solid 1px black;
   }
+  
   .popup-head{
     width: 400px;
     object-fit: cover;
@@ -212,7 +232,37 @@
     text-align: justify;
     text-align-last: center;
   }
+
+  .jeep-container {
+    padding: 15px;
+    font-size: 14px;
+  }
+
+  .jeep-title {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .jeep-title h3 {
+    color: #454545;
+  }
+
+  .jeep-container p {
+    color: #2F98CA;
+  }
   
+  .jeep-list {
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .jeep-items {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
   .button-row {
     display: flex;
     justify-content: space-between;

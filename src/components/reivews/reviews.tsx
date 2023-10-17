@@ -1,7 +1,6 @@
 import './reviews.css'
 import Popup from './popup'
 import ReviewData from '@/shared/reviewData';
-import Jeepneys from '@/shared/jeepneys';
 import { useState } from 'react'
 import { SelectedPage } from "@/shared/types";
 import { motion } from "framer-motion";
@@ -17,11 +16,11 @@ interface Props {
     reviewSummary: string
     rating: number
     reviewData: ReviewData[]
-    jeepneys:Jeepneys[]
+    jeeps: any[]
     setSelectedPage: (value: SelectedPage) => void;
 }
 
-const reviews = ({ setSelectedPage, jeepneys, title, address, image, reviewSummary, reviewData, wifiRating, price, rating }: Props) => {
+const reviews = ({ setSelectedPage, title, address, image, reviewSummary, reviewData, wifiRating, price, rating, jeeps }: Props) => {
     const [reviewPopup, setReviewPopup] = useState<boolean>(false);
 
     return (
@@ -30,12 +29,11 @@ const reviews = ({ setSelectedPage, jeepneys, title, address, image, reviewSumma
                 onViewportEnter={() => setSelectedPage(SelectedPage.Reviews)}>
                 <div className="review-container">
                     <div className="review-image">
-                        <img src={image} alt="image-placeholder" />
+                        <img onClick={() => setReviewPopup(true)} src={image} alt="image-placeholder" />
                     </div>
                     <div className="review-summary">
                         <ReivewHeader 
                             trigger={reviewPopup}
-                            jeepneys={jeepneys}
                             title={title}
                             address={address}
                             wifiRating={wifiRating}
@@ -50,7 +48,6 @@ const reviews = ({ setSelectedPage, jeepneys, title, address, image, reviewSumma
                     </div>
                     <Popup
                         trigger={reviewPopup}
-                        jeepneys={jeepneys}
                         setTrigger={setReviewPopup}
                         reviewData={reviewData}
                         image={image}
@@ -60,6 +57,7 @@ const reviews = ({ setSelectedPage, jeepneys, title, address, image, reviewSumma
                         address={address}
                         wifiRating={wifiRating}
                         reviewSummary={reviewSummary}
+                        jeeps={jeeps}
                     />
                 </div>
             </motion.div>

@@ -1,11 +1,9 @@
 import { PiWifiMediumBold, PiWifiLowBold, PiWifiHighBold } from 'react-icons/pi'
 import { FaPesoSign } from 'react-icons/fa6';
 import { FaStar } from 'react-icons/fa';
-import Jeepneys from '@/shared/jeepneys';
 
 interface Props {
     trigger: boolean;
-    jeepneys: Jeepneys[]
     title: string
     address: string
     wifiRating: string
@@ -13,7 +11,7 @@ interface Props {
     rating: number
 }
 
-const reivew_header = ({ jeepneys, trigger, title, address, wifiRating, price, rating }: Props) => {
+const reivew_header = ({title, address, wifiRating, price, rating }: Props) => {
 
     const filledStars = Math.floor(rating);
     const starElements = [];
@@ -82,17 +80,6 @@ const reivew_header = ({ jeepneys, trigger, title, address, wifiRating, price, r
                 </div>
             </div>
             <p>{address}</p>
-            <div>
-                {trigger ?
-                    <div>jeepney route
-                        {jeepneys.map(jeepney => (
-                            <div>
-                                <h1>{jeepney.jeep}</h1>
-                            </div>
-                        ))}
-                    </div> : ""
-                }
-            </div>
         </div>
     )
 }
