@@ -1,7 +1,4 @@
 import { SelectedPage } from "@/shared/types";
-
-
-
 import { motion } from "framer-motion";
 
 type Props = {
@@ -36,4 +33,4 @@ const aboutus = ({ setSelectedPage }: Props) => {
   )
 }
 
-export default aboutus
+export default aboutus 

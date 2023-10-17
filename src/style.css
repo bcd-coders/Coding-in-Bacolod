@@ -82,7 +82,7 @@
 }
 
 .aboutUsTitle {
-  font-size: 30px;
+  font-size: 59px;
   width: fit-content;
   color: rgb(31, 115, 188);
 }
@@ -96,6 +96,44 @@
 .aboutUsParagraph {
   font-size: 30px;
   width: fit-content;
+}
+
+@media (max-width:700px) {
+  .aboutUsImage {
+    height: 500px;
+    background-image: linear-gradient(rgba(34, 34, 34, 0.5), rgba(34, 34, 34, 0.5)), url('assets/aboutUs.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    position: relative;
+  }
+
+  .aboutUsContainer {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 350px;
+  }
+
+  .aboutUsTitle {
+    font-weight: bold;
+    font-size: 1.5rem;
+    width: fit-content;
+    color: rgb(31, 115, 188);
+  }
+
+  .aboutUsBody {
+
+    font-size: 1rem;
+    width: fit-content;
+    color: rgb(255, 255, 255);
+  }
+
+  .aboutUsParagraph {
+    font-size: 1rem;
+    width: fit-content;
+  }
 }
 
 @media (max-width:700px) {
