@@ -128,6 +128,12 @@ const allReviewData = [
     wifiRating: "3",
 
     jeeps:[
+      {
+        jeep: "Bata - Libertad"
+      },
+      {
+        jeep: "Mandalagan - Libertad"
+      },
 
 
     ],
@@ -152,8 +158,13 @@ const allReviewData = [
     wifiRating: "3",
 
     jeeps: [
-      {}
+      {
+        jeep: "Shopping - La Salle"
+      },
 
+      {
+        jeep: "Shopping - San Agustin"
+      },
     ],
 
     reviewData:[
