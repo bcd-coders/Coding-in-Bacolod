@@ -2,7 +2,7 @@ const allReviewData = [
   {
     title: "Arendo",
     address: "Gf - 9 Roli's Arcade, La Salle Avenue",
-    image: "https://picsum.photos/350/300",
+    image: ["src/assets/arendo.jpeg", "https://picsum.photos/350/300"],
     rating: 5,
     price: "3",
     wifiRating: "5",
@@ -43,7 +43,7 @@ const allReviewData = [
   {
     title: "RTC Coworking",
     address: "2nd F, Perpetual Bldg corner Henaez & Jovita St.",
-    image: "https://picsum.photos/350/301",
+    image: ["src/assets/rtc.jpg", "https://picsum.photos/350/301"],
     rating: 3,
     price: "1",
     wifiRating: "3",
@@ -80,8 +80,8 @@ const allReviewData = [
   },
   {
     title: "Tom n Tom's",
-    address: "2nd F, Perpetual Bldg corner Henaez & Jovita St.",
-    image: "https://picsum.photos/350/302",
+    address: "Corner of 26th and Lacson Streets, Bacolod CIty.",
+    image: ["src/assets/tom-n-toms.jpg", "https://picsum.photos/350/303"],
     rating: 4,
     price: "3",
     wifiRating: "3",
@@ -118,7 +118,69 @@ const allReviewData = [
         Review: "Tom n Toms is one of my favorite coffee shops in bacolod. The venue of the shop is comfortable and cozy. It gets a little crowded once in a while since it is popular but during off-peak times, you can really relax and enjoy your time. The Wi-Fi speed of the place is average but during peak hours it drastically drops due to internet traffic. You can order a variety of food and beverages since this place does not only serve coffee-based products only. The only downside of Tom n Toms is that the place is in the middle of the main road where traffic is a usual occurance but all in all i highly reccomend you to check it out."
       }
     ]
+  },
+  {
+    title: "But First, Coffee",
+    address: "Lacson St. corner B.S. Aquino Drive, Brgy. 4, Bacolod CIty",
+    image: ["https://picsum.photos/350/305"],
+    rating: 4,
+    price: "3",
+    wifiRating: "3",
+
+    jeeps:[
+      {
+        jeep: "Bata - Libertad"
+      },
+      {
+        jeep: "Mandalagan - Libertad"
+      },
+
+
+    ],
+
+    reviewData: [
+      {
+        Reviewer: "Ariel",
+        Review: "I visited But First, Coffee in Bacolod last week and I was impressed by their service and quality. The place is cozy and stylish, with a minimalist design and a relaxing ambiance. The staff are friendly and attentive, and they serve a variety of coffee drinks and pastries. I ordered a Iced coffeee and a cake, and they were both delicious and satisfying. I enjoyed my experience at But First, Coffee and I would definitely come back again. This is one of the best cafes in Bacolod City."
+      },
+      {
+        Reviewer: "Ziegfred",
+        Review: "This is the first time I've visited But First, Coffee and the place is nice and furnished since its a newly built place. The coffee was good and with an affordable price. The staff are very welcoming and accomodating to the customers. The place seems to be crowded if its rush hour and a little noisy to hold a proper conversation if many people are around. You can relax and have nice coffee with friends if theres not much customer inside."
+      }
+    ]
+  },
+  {
+    title: "Lazy Hound",
+    address: "2380 C.L Montelibano Ave., Bacolod CIty ",
+    image: ["https://picsum.photos/350/304"],
+    rating: 5,
+    price: "3",
+    wifiRating: "3",
+
+    jeeps: [
+      {
+        jeep: "Shopping - La Salle"
+      },
+
+      {
+        jeep: "Shopping - San Agustin"
+      },
+    ],
+
+    reviewData:[
+      {
+        Reviewer: "Ariel",
+        Review: "I went to LAZY HOUND in Bacolod yesterday and I had a great time. The cafe is located at Antares Bldg., near Bascon Lasalle. The cafe has a cute and cozy vibe, with a dog-themed decor and a spacious seating area. The staff are very friendly and helpful, and they have free wifi for the customers. The coffee at LAZY HOUND is amazing. I tried their iced vanilla oat latte and it was smooth, creamy, and refreshing. They also have a variety of coffee drinks to choose from, as well as teas, juices, and smoothies. The food at LAZY HOUND is also delicious. They have cakes, pastries, and munchies that are affordable and satisfying. I had their revel bars and they were moist, chewy, and chocolatey. They also have cheesecakes, brownies, cookies, and more. I heard they are planning to add sandwiches and pastas to their menu soon."
+      },
+      {
+        Reviewer: "Ziegfred",
+        Review: "Nestled in a cozy corner, Lazy Hound is a haven for coffee lovers and dog enthusiasts alike, offering an inviting atmosphere, expertly brewed coffee, heavenly desserts, and the joy of cuddling friendly dogs; conveniently located with excellent Wi-Fi, this delightful spot charms visitors with its warm staff and pet-friendly ambiance, creating a unique and unforgettable experience."
+      }
+
+    ]
+
   }
+
 ]
 
 export default allReviewData;
