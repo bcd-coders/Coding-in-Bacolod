@@ -2,7 +2,7 @@ const allReviewData = [
   {
     title: "Arendo",
     address: "Gf - 9 Roli's Arcade, La Salle Avenue",
-    image: "https://picsum.photos/350/300",
+    image: ["src/assets/arendo.jpeg", "https://picsum.photos/350/300"],
     rating: 5,
     price: "3",
     wifiRating: "5",
@@ -43,7 +43,7 @@ const allReviewData = [
   {
     title: "RTC Coworking",
     address: "2nd F, Perpetual Bldg corner Henaez & Jovita St.",
-    image: "https://picsum.photos/350/301",
+    image: ["src/assets/rtc.jpg", "https://picsum.photos/350/301"],
     rating: 3,
     price: "1",
     wifiRating: "3",
@@ -81,7 +81,7 @@ const allReviewData = [
   {
     title: "Tom n Tom's",
     address: "Corner of 26th and Lacson Streets, Bacolod CIty.",
-    image: "https://picsum.photos/350/302",
+    image: ["src/assets/tom-n-toms.jpg", "https://picsum.photos/350/303"],
     rating: 4,
     price: "3",
     wifiRating: "3",
@@ -122,7 +122,7 @@ const allReviewData = [
   {
     title: "But First, Coffee",
     address: "Lacson St. corner B.S. Aquino Drive, Brgy. 4, Bacolod CIty",
-    image: "https://picsum.photos/350/303",
+    image: ["https://picsum.photos/350/305"],
     rating: 4,
     price: "3",
     wifiRating: "3",
@@ -152,7 +152,7 @@ const allReviewData = [
   {
     title: "Lazy Hound",
     address: "2380 C.L Montelibano Ave., Bacolod CIty ",
-    image: "https://picsum.photos/350/304",
+    image: ["https://picsum.photos/350/304"],
     rating: 5,
     price: "3",
     wifiRating: "3",

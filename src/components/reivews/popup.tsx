@@ -15,7 +15,7 @@ interface Props {
   reviewData: ReviewData[]
   title: string
   address: string
-  image: string
+  image: string[]
   wifiRating: string
   price: string
   reviewSummary: string
@@ -23,14 +23,16 @@ interface Props {
   jeeps: any[]
 }
 
-const popup = ({ trigger, setTrigger, reviewData, title, address, wifiRating, price, rating, jeeps }: Props) => {
+const popup = ({ trigger, setTrigger, image, reviewData, title, address, wifiRating, price, rating, jeeps }: Props) => {
 
 
   return (trigger) ? (
     <div className="popup">
       <div className="popup-inner">
         <div className="popup-container">
-          <ImgCarousel />
+          <ImgCarousel 
+            images={image}
+          />
           <div className="popup-summary">
             <ReivewHeader
               trigger={trigger}

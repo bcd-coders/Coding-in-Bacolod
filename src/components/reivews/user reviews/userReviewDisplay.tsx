@@ -1,7 +1,7 @@
 import ReviewData from '@/shared/reviewData';
 import UserReview from './userReview';
 import { useState } from 'react'
-import RowSelector from '../rowSelector';
+import RowSelector from './rowSelector';
 
 interface Props {
     reviewData: ReviewData[]

@@ -10,7 +10,7 @@ import ReivewHeader from './reivew_header';
 interface Props {
     title: string
     address: string
-    image: string
+    image: string[]
     wifiRating: string
     price: string
     reviewSummary: string
@@ -29,7 +29,7 @@ const reviews = ({ setSelectedPage, title, address, image, reviewSummary, review
                 onViewportEnter={() => setSelectedPage(SelectedPage.Reviews)}>
                 <div className="review-container">
                     <div className="review-image">
-                        <img onClick={() => setReviewPopup(true)} src={image} alt="image-placeholder" />
+                        <img onClick={() => setReviewPopup(true)} src={image[0]} alt="image-placeholder" />
                     </div>
                     <div className="review-summary">
                         <ReivewHeader 
