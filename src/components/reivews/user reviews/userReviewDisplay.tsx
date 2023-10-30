@@ -11,7 +11,7 @@ const userReviewDisplay = ({reviewData}: Props) => {
   const [activeIndex, setActiveIndex] = useState(0)
 
   return (
-    <div>
+    <div className="user-review-box">
       <UserReview 
           reviewer={reviewData[activeIndex].Reviewer}
           review={reviewData[activeIndex].Review}
