@@ -30,6 +30,17 @@
   transition: background-color 0.3s ease;
 }
 
+.navbar img {
+  margin-left: 20px;
+  margin-top: 20px;
+  height: 80px;
+}
+
+.navbarBackground img {
+  height: 60px;
+  margin-left: 20px;
+}
+
 .logo {
   margin: 80px;
   color: white;
@@ -254,14 +265,21 @@
 .user-review-container {
   margin-top: 10px;
   padding: 10px;
+  height: 170px;
+  overflow-y: auto;
 }
 
 @media (max-width: 600px){
   .user-review-container {
     margin-top: 10px;
     padding: 10px;
-    height: 30vh;
+    height: 170px;
   }
+}
+
+.user-review-box {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .user-review-container p {
@@ -273,6 +291,8 @@
   display: flex;
   align-items: center;
   gap: 10px;
+  padding-bottom: 10px;
+  border-bottom: solid lightgray 1px;
 }
 
 .user-img {
