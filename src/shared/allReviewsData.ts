@@ -80,7 +80,7 @@ const allReviewData = [
   },
   {
     title: "Tom n Tom's",
-    address: "Corner of 26th and Lacson Streets, Bacolod CIty.",
+    address: "Corner of 26th and Lacson Street",
     image: ["src/assets/tom-n-toms.jpg", "https://picsum.photos/350/303"],
     rating: 4,
     price: "3",
@@ -121,7 +121,7 @@ const allReviewData = [
   },
   {
     title: "But First, Coffee",
-    address: "Lacson St. corner B.S. Aquino Drive, Brgy. 4, Bacolod CIty",
+    address: "Lacson St. corner B.S. Aquino Drive, Brgy. 4",
     image: ["https://picsum.photos/350/305"],
     rating: 4,
     price: "3",
@@ -151,7 +151,7 @@ const allReviewData = [
   },
   {
     title: "Lazy Hound",
-    address: "2380 C.L Montelibano Ave., Bacolod CIty ",
+    address: "2380 C.L Montelibano Ave.",
     image: ["https://picsum.photos/350/304"],
     rating: 5,
     price: "3",
