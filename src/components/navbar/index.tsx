@@ -14,7 +14,7 @@ const index = ({ isTopOfPage, selectedPage, setSelectedPage }: Props) => {
   return (
 
     <div className={`${navbarBackground}`}>
-      <img src='src/assets/logo.png' alt="" />
+      <img src='./assets/logo.png' alt="" />
       <div className="options">
         <Link
           page="About Us"

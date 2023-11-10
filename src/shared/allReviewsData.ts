@@ -2,7 +2,7 @@ const allReviewData = [
   {
     title: "Arendo",
     address: "Gf - 9 Roli's Arcade, La Salle Avenue",
-    image: ["src/assets/arendo.jpeg", "src/assets/arendo2.jpeg","src/assets/arendo3.jpg"],
+    image: ["./assets/arendo.jpeg", "./assets/arendo2.jpeg","./assets/arendo3.jpg"],
     rating: 5,
     price: "3",
     wifiRating: "5",
@@ -43,7 +43,7 @@ const allReviewData = [
   {
     title: "RTC Coworking",
     address: "2nd F, Perpetual Bldg corner Henaez & Jovita St.",
-    image: ["src/assets/rtc.jpg", "src/assets/rtc2.jpg","src/assets/rtc3.jpg"],
+    image: ["./assets/rtc.jpg", "./assets/rtc2.jpg","./assets/rtc3.jpg"],
     rating: 3,
     price: "1",
     wifiRating: "3",
@@ -81,7 +81,7 @@ const allReviewData = [
   {
     title: "Tom n Tom's",
     address: "Corner of 26th and Lacson Street",
-    image: ["src/assets/tom-n-toms.jpg", "src/assets/tom-n-toms2.jpg","src/assets/tom-n-toms3.jpg"],
+    image: ["./assets/tom-n-toms.jpg", "./assets/tom-n-toms2.jpg","./assets/tom-n-toms3.jpg"],
     rating: 4,
     price: "3",
     wifiRating: "3",
@@ -122,7 +122,7 @@ const allReviewData = [
   {
     title: "But First, Coffee",
     address: "Lacson St. corner B.S. Aquino Drive, Brgy. 4",
-    image: ["src/assets/butt-first.jpg","src/assets/butt-first2.jpg","src/assets/butt-first3.jpg"],
+    image: ["./assets/butt-first.jpg","./assets/butt-first2.jpg","./assets/butt-first3.jpg"],
     rating: 4,
     price: "3",
     wifiRating: "3",
@@ -152,7 +152,7 @@ const allReviewData = [
   {
     title: "Lazy Hound",
     address: "2380 C.L Montelibano Ave.",
-    image: ["src/assets/lazy_hound.jpg","src/assets/lazy_hound2.jpg","src/assets/lazy_hound3.jpg"],
+    image: ["./assets/lazy_hound2.jpg","./assets/lazy_hound.jpg","./assets/lazy_hound3.jpg"],
     rating: 5,
     price: "3",
     wifiRating: "3",

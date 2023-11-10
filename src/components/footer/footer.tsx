@@ -8,7 +8,7 @@ const Footer = () => {
         <div className="foot-title">
           <p><BiCopyright />2023</p><h2>bcd coders.</h2>
         </div>
-        <img src="src\assets\logo.png" alt="Center Image" />
+        <img src="./assets/logo.png" alt="Center Image" />
         <div className="contact">
           <h2>Our <a href="/">Services</a>.</h2>
         </div>

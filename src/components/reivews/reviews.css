@@ -59,6 +59,7 @@
   
     .review-image {
       width: 40%;
+      height: 316px;
       order: -1;
       border-radius: 1em 1em 0em 1em;
     }
