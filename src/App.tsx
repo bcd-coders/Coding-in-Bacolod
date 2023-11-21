@@ -39,7 +39,7 @@ function App() {
           image={review.image}
           wifiRating={review.wifiRating}
           price={review.price}
-          reviewSummary=''
+          reviewSummary={review.reviewSummary}
           rating={review.rating}
           reviewData={review.reviewData}
           jeeps={review.jeeps}

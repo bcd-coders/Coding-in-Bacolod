@@ -38,7 +38,8 @@ const allReviewData = [
         Reviewer: "Ziegfred",
         Review: "this co-working space offers a vibrant and collaborative environment for professionals seeking a creative and inspiring workspace. With a wide range of amenities, flexible workspace options, and a strong emphasis on community building, it caters to the needs of freelancers, entrepreneurs, and small businesses alike. While the pricing may be a consideration for some, the added value in terms of networking opportunities and amenities makes it a compelling choice for those looking to work in a dynamic and supportive co-working environment."
       }
-    ]
+    ],
+    reviewSummary:"Arendo Co-working Space in Bacolod City, lauded for its friendly staff, cleanliness, and convenient location near La Salle, provides professionals with an ideal workspace offering complimentary coffee, reasonably priced printer services, and a highly regarded atmosphere for productivity and collaboration."
   },
   {
     title: "RTC Coworking",
@@ -76,7 +77,9 @@ const allReviewData = [
         Reviewer: "Ziegfred",
         Review: "The first time i went to RTC is that it is very hard to locate at first. The place is inside a building where it is very closed off from the outside. Acquiring a space is cheap and they also offer free drinks inside. Although it is small, You can have a meeting consisting 5-10 people inside the largest space they have. Wi-Fi inside the place is above average since it is not well-known and a few people goes and works there from time to time. Finding food outside the building is not a problem at all since they have karinderyas and small corner shops where you can buy various foods and drinks. "
       }
-    ]
+    ],
+    reviewSummary:"RTC Co-working Space in Bacolod has a challenging-to-find location with no signs, but offers a quiet, private atmosphere, affordable rates, good internet, comfy seating, and free coffee, though reservations and staff availability during business hours can be challenging."
+  
   },
   {
     title: "Tom n Tom's",
@@ -117,7 +120,9 @@ const allReviewData = [
         Reviewer: "Ziegfred",
         Review: "Tom n Toms is one of my favorite coffee shops in bacolod. The venue of the shop is comfortable and cozy. It gets a little crowded once in a while since it is popular but during off-peak times, you can really relax and enjoy your time. The Wi-Fi speed of the place is average but during peak hours it drastically drops due to internet traffic. You can order a variety of food and beverages since this place does not only serve coffee-based products only. The only downside of Tom n Toms is that the place is in the middle of the main road where traffic is a usual occurance but all in all i highly reccomend you to check it out."
       }
-    ]
+    ],
+    reviewSummary:"Tom-N-Toms in Bacolod is consistently praised as a go-to spot for its good coffee, ample tables, free Wi-Fi, and helpful staff, making it a reliable choice for work or meetings, though some reviewers note occasional slow internet and availability issues with drinks, with an overall positive recommendation for its cozy ambiance, quality coffee, and varied food options."
+  
   },
   {
     title: "But First, Coffee",
@@ -147,7 +152,9 @@ const allReviewData = [
         Reviewer: "Ziegfred",
         Review: "This is the first time I've visited But First, Coffee and the place is nice and furnished since its a newly built place. The coffee was good and with an affordable price. The staff are very welcoming and accomodating to the customers. The place seems to be crowded if its rush hour and a little noisy to hold a proper conversation if many people are around. You can relax and have nice coffee with friends if theres not much customer inside."
       }
-    ]
+    ],
+    reviewSummary:"But First, Coffee in Bacolod receives positive reviews for its cozy and stylish ambiance, friendly and attentive staff, and delicious coffee and pastries, making it one of the best cafes in the city, with praise for its affordability and newly built, well-furnished space, though it can get crowded during rush hours."
+    
   },
   {
     title: "Lazy Hound",
@@ -177,8 +184,8 @@ const allReviewData = [
         Review: "Nestled in a cozy corner, Lazy Hound is a haven for coffee lovers and dog enthusiasts alike, offering an inviting atmosphere, expertly brewed coffee, heavenly desserts, and the joy of cuddling friendly dogs; conveniently located with excellent Wi-Fi, this delightful spot charms visitors with its warm staff and pet-friendly ambiance, creating a unique and unforgettable experience."
       }
 
-    ]
-
+    ],
+    reviewSummary:"Lazy Hound in Bacolod, nestled near Bascon Lasalle, captivates with its cozy, dog-themed atmosphere, accommodating staff, stellar Wi-Fi, and a delectable menu featuring affordable delights. the cafe also plans to expand its offerings to include sandwiches and pastas, creating a unique and delightful experience for coffee lovers and dog enthusiasts alike."
   }
 
 ]
